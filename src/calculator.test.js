@@ -1,20 +1,13 @@
 /* eslint-disable no-unused-expressions */
 const calculator = require('./calculator');
-
-describe('_check', () => {
+describe.skip('_check', () => {
   beforeEach(() => {
     sinon.spy(calculator, '_check');
   });
-
-  afterEach(() => {
+ afterEach(() => {
     calculator._check.restore();
   });
-
-  it('should throw a TypeError if arguments are not numbers', () => {
-
-
-  });
-
+ 
   it('should be called once in "add"', () => {
     calculator.add(40, 2);
   });
